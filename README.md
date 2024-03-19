@@ -9,3 +9,5 @@ la pagina inici por el archivo inicio.html despues puede dirigirse a cualquier o
 -- desaparesca 
 
 la pagina la continue solo ya que matias se retiro del curso
+
+Pagina hecha por Renato Facundo Vargas Carrion
