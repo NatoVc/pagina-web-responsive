@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Interactiva</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="encuesta.css">
+</head>
+<body>
+
+    <header class="menu">
+        <label>
+            <img src="https://i.pinimg.com/736x/56/c8/c0/56c8c0985a999c0d027ef94ce4cc9f7b.jpg" alt="logo" class="menu-icono" height="80" width="60">
+            <!--pondre una imagen como un logo-->
+        </label>
+        <ul class="menu-links">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="animes.html">Animes</a></li>
+            <li><a href="estudio.html">Estudio de animacion</a></li>
+            <li><a href="mangas.html">mangas</a</li>
+            <li><a href="Merchandising.html">Merchandising</a></li>
+            <li><a href="https://twitter.com/renat0_v" class="fa fa-twitter"></a></li>
+        </ul>
+    </header>
+
+    <form action="#" method="post">
+        <div class="forms-grupos">
+            <label><b>Nombre</b></label>
+            <input type="text" name="name-label" id="nombre" placeholder="Ingresa tu nombre" required>
+        </div>
+
+        <div class="forms-grupos">
+            <label><b>Email</b></label>
+            <input type="Email" name="Email-label" id="Email" placeholder="Ingresa tu Email" required>
+        </div>
+
+        <div class="forms-grupos">
+            <label><b>Edad</b></label>
+            <input type="number" name="number-label" id="edad" placeholder="Ingresa tu Edad" required min="16" max="99">
+        </div>
+
+        <div class="forms-grupos">
+            <p>Rol</p>
+            <label>
+                <select name="usuario-opcion" id="select" class="selectop">
+                    <option disabled selected value>Selecciona tu Rol</option>
+                    <option value="Estudiante">Estudiante</option>
+                    <option value="Profesor">Profesor</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="forms-grupos">
+            <p><b>Como fue tu experiencia en nuestra pagina?</b></p>
+
+            <label>
+                <input type="radio" name="opcion-usuario" id="Muy buena">
+                <b>Muy buena</b>
+            </label>
+
+            <label>
+                <input type="radio" name="opcion-usuario" id="Buena">
+                <b>Buena</b>
+            </label>
+
+            <label>
+                <input type="radio" name="opcion-usuario" id="Regular">
+                <b>Regular</b>
+            </label>
+
+            <label>
+                <input type="radio" name="opcion-usuario" id="Mala">
+                <b>Mala</b>
+            </label>
+
+            <label>
+                <input type="radio" name="opcion-usuario" id="Pesima">
+                <b>Pesima</b>
+            </label>
+
+        </div>
+
+        <div class="forms-grupos">
+            <p><b>Cual Fue tu Pagina Favorita?</b></p>
+
+            <label>
+                <input type="radio" name="" id="Inicio">
+                <b>Inicio</b>
+            </label>
+
+            <label>
+                <input type="radio" name="" id="Animes">
+                <b>Animes</b>
+            </label>
+
+            <label>
+                <input type="radio" name="" id="Mangas">
+                <b>Mangas</b>
+            </label>
+
+            <label>
+                <input type="radio" name="" id="Estudio">
+                <b>Estudio de Animacion</b>
+            </label>
+
+            <label>
+                <input type="radio" name="" id="Merchandising">
+                <b>Merchandising</b>
+            </label>
+        </div>
+
+        <div class="forms-grupos">
+            <p><b>Escribenos tus comentarios</b></p>
+            <label>
+                <input type="text" name="comment" id="comentarios" placeholder="Escribe tu opinion acerca de nuestra pagina">
+            </label>
+        </div>
+        <div class="button">
+            <input type="submit" onclick="redireccionar()" value="enviar">
+        </div>
+    </form>
+    <footer class="footer">
+        <div class="container-fot">
+            <h2><b>© Copyright all right reserved</b></h2>
+        </div>
+        <div class="footer-cont">
+            <h2>esta pagina le pertenece M/R</h2>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,181 @@
+body, h1, h2, p, ul, li, figure, figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.arriba {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu-horizontal {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.menu-horizontal a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-horizontal a:hover {
+    background-color: #555;
+}
+
+.menu-vertical {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+}
+
+.fent {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+#nou {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.normal {
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.normal:hover {
+    transform: scale(1.05);
+}
+
+.aot {
+    margin-top: 10px;
+}
+
+#unic {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#ani {
+    color: #333;
+}
+
+.lol {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.imagenes img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.imagenes img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#registerButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; 
+}
+
+#registerButton:hover {
+    background-color: #2980b9;
+}
+
+#registerButton img {
+    width: 10px; /* Ajusta el ancho según tu diseño */
+    height: auto; /* Mantiene la proporción del logotipo */
+    border-radius: 50%; /* Ajusta el redondeo del logotipo */
+    transition: transform 0.3s; /* Agrega una transición para suavizar el cambio de tamaño al pasar el ratón sobre él */
+}
+
+#registerButton:hover img {
+    transform: scale(1.2); /* Hace que el logotipo aumente de tamaño al pasar el ratón sobre él */
+}
+
+@media screen and (max-width: 768px) {
+    .menu-horizontal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-vertical {
+        position: static;
+        display: block;
+        background-color: inherit;
+        box-shadow: none;
+    }
+
+    .lol {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagenes img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #registerButton {
+        position: static;
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+    }
+    #registerButton img {
+        width: 30px; 
+    }
+}
