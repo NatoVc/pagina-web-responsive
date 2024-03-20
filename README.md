@@ -12,4 +12,7 @@ algunos de los codigos de javascript los reutilize de antiguas tareas dejadas co
 
 la pagina la continue solo ya que matias se retiro del curso
 
+no se si influya mucho pero recomiendo ver algunas paginas con menos zoom ya que por ejemplo en el pc de mi casa se ve todo bien
+pero en el portatil algunas paginas se ven algo mas grandes
+
 Pagina hecha por Renato Facundo Vargas Carrion
