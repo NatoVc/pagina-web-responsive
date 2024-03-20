@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*agrego un color para en fondo de la pagina*/
+body{
+    background-color: #131963;
+}
+
+header{
+    min-width: 70vh;
+    display: flex;
+    align-items: center;
+
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+
+}
+/*estilo de menu de navegacion*/
+.menu{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .logo{
+    font-weight: 700;
+    font-size: 25px;
+    color: #FFF;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 10px 15px;
+    color: #FFF;
+    border-radius: 15px;
+    display: block;
+}
+
+.menu .navbar ul li a:hover{
+    background-color: #3EDADD;
+}
+
+#menu{
+    display: none;
+
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+/*encabezado*/
+.header-content img{
+    width: 550px;
+    margin-top: 100px;
+
+}
+
+.content{
+    padding: 150px 50px 0px 0px;
+
+}
+@media screen and (max-width: 768px) {
+    .menu .navbar ul li {
+        position: relative;
+        float: left;
+    }
+
+    .menu .navbar ul li a {
+        font-size: 18px;
+        padding: 10px 15px;
+        color: #FFF;
+        border-radius: 15px;
+        display: block;
+    }
+
+    .menu .navbar ul li a:hover {
+        background-color: #3EDADD;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        height: 0vh;
+        padding: 400px 0px 340px 0px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 0px 30px;
+    }
+}
+
+
+/*pongo estilo al titulo principal*/
+h1{
+    margin-top: 20vh;
+    text-align: center;
+    color: #3EDADD;
+}
+
+.contenido{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+/*pongo estilo al contenido principal*/
+.card{
+    width: calc(33.33% - 40px);
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #FFF;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+        
+}
+/* pongo un efecto de sombra cuando se interactue con el card*/
+.card img{
+    width: 100%;
+    height: 210px;
+}
+/*pongo estilo de contenido de las card*/
+.card .conten{
+    padding: 15px;
+    text-align: center;
+}
+
+
+.card .conten p{
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+
+.card .conten h2{
+    font-weight: 400;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+.card .conten a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+.card .conten a:hover {
+    background: #2fb4cc;
+    color: #FFF;
+}
+
+.card .conten:hover{
+    background: #2fb4cc;
+    color: #FFF;
+}
+/*pongo estilo para el 3er titulo*/
+h3{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    text-align: center;
+    color: #3EDADD;
+}
+/*agrego un footer con el copyright*/
+footer{
+    background: #333;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+footer p{
+    margin: 0;
+    font-size: 14px;
+    color: #fff;
+    padding: 10px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+    padding: 20px;
+    background: #fff;
+    z-index: 1;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#popup {
+    max-width: 600px; /* Establece el ancho máximo de la ventana emergente según tus necesidades */
+}
+
+#popup img {
+    max-width: 100%; /* Ajusta la imagen para que sea responsiva y no exceda el ancho de la ventana emergente */
+    height: auto; /* Ajusta la altura automáticamente proporcionalmente al ancho */
+    display: block; /* Evita el espacio adicional debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+.button-container {
+    text-align: center; /* Alinea los botones al centro */
+}
+
+.button-container button {
+    display: inline-block; /* Muestra los botones en línea horizontalmente */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff; /* Azul */
+    color: #fff; /* Texto blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Espacio entre los botones */
+}
+
+.button-container button:last-child {
+    margin-right: 0; /* Quita el margen derecho del último botón */
+}
+
+.button-container button:hover {
+    background-color: #0056b3; /* Azul oscuro */
+}
+
+.button-container button:active {
+    background-color: #004080; /* Azul más oscuro */
+}
