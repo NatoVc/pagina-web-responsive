@@ -1,18 +1,20 @@
-Pagina de animes
+# Página de Animes
 
-la pagina inicia por el archivo inicio.html despues puede dirigirse a cualquier otra pagina 
+La página comienza con el archivo `inicio.html` y luego puede navegar hacia cualquier otra página.
 
-/cosas que intente hacer/
--- intente hacer algo en una parte del codigo js llamado login.js quise que cuando se termine de registar y cuando le de al submit el boton que salia al inicio
--- desaparesca 
--- tambien intente hacer un redireccionamiento en la pagina de encuentas que cuando termine de la valoracion lo redireccione a otra pagina 
-//
+## Intentos de Implementación
 
-algunos de los codigos de javascript los reutilize de antiguas tareas dejadas como el de ocultar contenido
+### Funcionalidad de Registro y Redireccionamiento
+Intente agregar una funcion en el archivo `login.js` donde al completar el registro y hacer clic en el botón "submit", el botón de inicio desaparecería. 
 
-la pagina la continue solo ya que matias se retiro del curso
+### Reutilización de Código JavaScript
+Algunos de los codigos JavaScript fueron reutilizados de tareas anteriores, como el de ocultar contenido.
 
-no se si influya mucho pero recomiendo ver algunas paginas con menos zoom ya que por ejemplo en el pc de mi casa se ve todo bien
-pero en el portatil algunas paginas se ven algo mas grandes
+## Continuacion del Desarrollo
+Continue trabajando en la página por mi cuenta ya que Matias se retirara del curso.
 
-Pagina hecha por Renato Facundo Vargas Carrion
+## Recomendaciones de Visualización
+Sugiero ajustar el zoom en algunas paginas, ya que puede haber variaciones en como se visualizan en diferentes dispositivos, por ejemplo, en mi PC en casa, todo se ve bien, pero en el portátil, algunas páginas pueden aparecer más grandes.
+
+## Autor
+Pagina creada por Renato Facundo Vargas Carrion.
