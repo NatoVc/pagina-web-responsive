@@ -5,7 +5,8 @@ La página comienza con el archivo `inicio.html` y luego puede navegar hacia cua
 ## Intentos de Implementación
 
 ### Funcionalidad de Registro y Redireccionamiento
-Intente agregar una funcion en el archivo `login.js` donde al completar el registro y hacer clic en el botón "submit", el botón de inicio desaparecería. 
+Intente agregar una funcion en el archivo `login.js` donde al completar el registro y hacer clic en el botón "submit", el botón de inicio desaparecería.
+tambien intente agregar los resultados de la pagina `encuesta.html` pero no lo logre.
 
 ### Reutilización de Código JavaScript
 Algunos de los codigos JavaScript fueron reutilizados de tareas anteriores, como el de ocultar contenido.
